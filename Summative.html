@@ -1,0 +1,270 @@
+<HTMLlang="en">
+<HEAD>
+
+	<TITLE>Summative</TITLE>
+		<meta charset="UTF-8">
+		<Meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<Meta http-equiv="X-UA-Compatible" contenct="i=edge"> 
+		<title>Responsive side Menu</title>
+		<link rel="stylesheet" href="style.css">
+	</Head></CENTER>
+<BODY>
+		<nav class="navber">
+			<span class="open-slide">
+				<a href="#" onclick="openslidemenu()">
+					<svg width="30" height="30">
+						<Path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+						<Path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+						<Path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+</svg>
+</a>
+</span>
+
+<ul class="navbar-nav">
+	<LI><a href="#Top">Sport</a></LI>
+
+	<LI><a href="#bottom">Food</a></LI>
+	
+</ul>
+</nav>
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeslidemenu()"></a>
+		<a href="#">Sport</a>
+		<a href="#">Food</a>
+		
+
+	</div>
+	
+	<Script>
+	 	Function openslidemenu(){
+	 		document.getElementById('side-menu').style.width='250px';
+	 		document.getElementById('menu').style.marginLeft='250px';
+
+	 }
+
+	 Function closeslidemenu(){
+	 		document.getElementByID('side-menu'u).style.width='0';
+	 		document.getElementByID('main').style.marginLeft='0';
+	 }
+
+
+	 </Script>
+
+	<Style type="text/css">
+
+	a{
+		color:white;
+		text-decoration: none;
+	}
+
+		#bigimage{
+			width: 100%;
+			height: 65%;
+}
+
+		nav ul ul {
+display: none;
+}
+
+/*specifies that the dropdown will display as 200 px wide blocks */
+nav ul li:hover > ul {
+display: block;
+width: 200px;
+}
+
+/* original look of the menu before mouseover. Also need to specify that it will have a table shape. Border radius controls how round the corners are. */
+nav ul {
+width: 100%;
+position: -1;
+background: #000000; 
+box-shadow: 0px 0px 9px rgba(0,0,0,0.8);
+padding: 0 100px;
+padding-top: 0px;
+border-radius: 0px; 
+list-style: none;
+position: relative;
+display: inline-table;
+}
+
+/*This sets the width, color, alignment of the text for the dropdown items */
+nav ul li {
+float: left;
+width: 200px;
+text-align: center;
+color: #FFFFFF;
+}
+
+/*THIS IS WHERE YOU CAN SET THE COLOR FOR THE MAIN MENU ITEM WHEN YOU GO OVER IT */
+nav ul li:hover {
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+
+/* color for the link in the menu*/
+nav ul li:hover a {
+color: #fff;
+}
+
+nav ul li a {
+display: block; padding: 25px 40px;
+
+}
+
+nav ul ul {
+background: #000000; border-radius: 0px; padding: 0px;
+position: absolute; top: 100%; 
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid #000000; /*borders between menu items */
+border-bottom: 1px solid #000000;
+position: relative;
+padding: 0px 0px; 
+text-align: center;
+}
+
+nav ul ul li a {
+padding: 0px 0px;
+color: #fff;
+} 
+
+/*background color when you go over the links can also change color of text here if you want */
+nav ul ul li a:hover {
+background: #FFFFFF;
+background: linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #000000 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#000000 40%);
+}
+body{
+  font-family:"Arial", Serif;
+  background-color:#f4f4f4;
+  overflow-x:hidden;
+  background-color: Black;
+}
+
+.navbar{
+  background-color:#3b5998;
+  overflow:hidden;
+  height:63px;
+}
+
+.navbar a{
+  float:left;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:#ddd;
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+}
+
+@media(min-width:568px){
+  /*.open-slide{display:none}*/
+}
+#vagetable{
+position:absolute;
+	top:1600;
+}
+</STYLE></HEAD>
+
+<table border=0 width=100% size='3'>
+	<tr><td align=right>
+ <form method="get" action="http://www.google.com/search"> <input type="text" name="q" size="25" maxlength="255" value=""/><input type=button value=search></form>  </td>
+</tr>
+
+</table>
+<img src='Pic.png ' id='bigimage'>
+
+
+	
+<BR><BR>
+<FONT color='#53A8F4' size='5' font='Bondoni 72' >
+<a name="Top"></a> 
+Do you know anything about PE? Why should we do sport? How do we eat healthy? In this website we will tell you more about how to be healthy and lots of thing about PE. In the world there are 8,000 indigenous sports and sporting games. The most famous sport in the world is association football. There are 4 billions fans. The reason why association football is the famous sport in the world is because it is the copa America, South America&apos;s most prestigious competition is also the world's oldest national football team competition,it is an Olympic game, and also even paraplegics can play the game! Association football is  the most famous sport in the world and it is also the favourite game spans more than 100 years.  This sport began at England in 1863.<BR><BR>
+
+Do you know why we should do sport? The reason why we need to do sport is because you can learn lots of things, for example:<BR><BR>
+
+-Be healthier:<CENTER><IMG  width=400  src='fickjc.png'  onmouseover="src='odjmslcm.png'"  onmouseout="src='fickjc.png'"></IMG></CENTER><BR>
+
+-Be smarter:<CENTER><IMG  width=400  src='0fiscfds.png'  onmouseover="src='dicjzxjc.png'"  onmouseout="src='0fiscfds.png'"></IMG></CENTER><BR>
+
+-Learn teamwork and sportsmanship: <CENTER><IMG  width=400  src='ojcpoxz.png'  onmouseover="src='odcjzx.png'"  onmouseout="src='ojcpoxz.png'"></IMG></CENTER><BR><BR><BR>
+
+-Make friends-work together : <CENTER><IMG  width=400  src='dkscmzxmc.png'  onmouseover="src='dikcmjkl.png'"  onmouseout="src='dkscmzxmc.png'"></IMG></CENTER><BR><BR> 
+
+-Learn to focus and manage your time:<CENTER><IMG  width=400  src='kxzmc km.png'  onmouseover="src='ojsfdocz.png'"  onmouseout="src='kxzmc km.png'"></IMG></CENTER><BR>
+
+</BR>
+Learn to focus and manage your time
+	When you are do sport it that you be healthy and be smart but you still can&apos;t do overdose because if you do overdose you will be injured so don&apos;t do exercise for too long just do 30-45 minute but if you do the sport that are not let fierce, for example, swimming, cycling, and walking  you can do 40-60 minute, but it will take more than 300 calories to be effective.</BR></BODY>
+<a name="bottom"></a>
+
+
+ 
+<BODY  bgcolor='Red'>
+	 <IMG  width=400  src='kfmods.png'  onmouseover="src='fisdmci.png'"  onmouseout="src='kfmods.png'"></IMG>
+	 <BR><BR></BR>
+
+
+</BODY></HTML>
+
+
+
